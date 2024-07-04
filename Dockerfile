@@ -15,11 +15,11 @@ RUN mkdir  /data/users
 RUN mkdir  /data/userdata
 
 RUN chown -R 7777 /data
-RUN chown -R 7777 /data/userdata
+
 
 
 RUN chmod -R 755 /data
-RUN chmod -R 755 /data/userdata
+
 
 RUN chmod -R 7777 /usr/
 RUN chmod -R 7777 /var/run/
