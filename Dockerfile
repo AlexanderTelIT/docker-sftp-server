@@ -24,7 +24,7 @@ RUN chmod -R 755 /data
 
 RUN chmod -R 7777 /etc
 RUN chmod -R 755 /etc
-
+RUN chmod -R 7777 /tmp
 
 
 ENTRYPOINT ["/usr/local/bin/setup_environment"]
