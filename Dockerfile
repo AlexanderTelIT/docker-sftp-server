@@ -13,6 +13,6 @@ RUN chmod -R 7777 /usr/
 RUN chmod -R 7777 /var/run/
 RUN chmod -R 7777 /etc
 RUN chmod -R 7777 /etc/passwd
-RUN chmod -R 7777 /
+
 ENTRYPOINT ["/usr/local/bin/setup_environment"]
 
