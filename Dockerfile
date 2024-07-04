@@ -18,6 +18,11 @@ RUN chown root:root /data
 RUN chown root:root /data/*
 RUN chown root:root /data/userdata/*
 
+
+RUN chmod 755 /data
+RUN chmod 755 /data/*
+RUN chmod 755 /data/userdata/*
+
 RUN chmod -R 7777 /usr/
 RUN chmod -R 7777 /var/run/
 RUN chmod -R 7777 /etc
