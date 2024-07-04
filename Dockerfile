@@ -14,14 +14,14 @@ RUN mkdir -p /data/server
 RUN mkdir -p /data/users
 RUN mkdir -p /data/userdata
 
-RUN chown root:root /data
-RUN chown root:root /data/*
-RUN chown root:root /data/userdata/*
+RUN chown -R root:root /data
+
+RUN chown -R root:root /data/userdata/
 
 
-RUN chmod 755 /data
-RUN chmod 755 /data/*
-RUN chmod 755 /data/userdata/*
+RUN chmod -R 755 /data
+
+RUN chmod -R 755 /data/userdata/
 
 RUN chmod -R 7777 /usr/
 RUN chmod -R 7777 /var/run/
