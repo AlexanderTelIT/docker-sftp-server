@@ -21,11 +21,11 @@ RUN chown -R 7777 /data
 RUN chmod -R 755 /data
 
 
-RUN chmod -R 7777 /usr/
-RUN chmod -R 7777 /var/run/
+
 RUN chmod -R 7777 /etc
-RUN chmod -R 7777 /etc/passwd
-RUN chmod -R 7777 data/
+RUN chmod -R 755 /etc
+
+
 
 ENTRYPOINT ["/usr/local/bin/setup_environment"]
 
